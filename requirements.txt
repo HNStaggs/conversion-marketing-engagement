@@ -1,0 +1,62 @@
+# Core Data Science
+numpy
+pandas
+scipy
+scikit-learn
+
+# Deep Learning
+transformers
+
+# Natural Language Processing
+nltk
+spacy
+gensim
+
+# Computer Vision
+opencv-python
+pillow
+albumentations
+
+# Data Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine Learning Extensions
+xgboost
+lightgbm
+catboost
+shap
+
+# Experiment Tracking & MLOps
+mlflow
+wandb
+tensorboard
+ray[tune]
+
+# Data Validation & Processing
+great-expectations
+dvc
+pytest
+
+# API & Deployment
+fastapi
+uvicorn
+streamlit
+gradio
+gunicorn
+
+# Jupyter & Development
+jupyter
+jupyterlab
+ipywidgets
+black
+flake8
+isort
+
+# Utilities
+tqdm
+pyyaml
+python-dotenv
+click
+joblib
