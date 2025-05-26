@@ -46,14 +46,12 @@ ipython_config.py
 *.pickle
 *.npy
 *.npz
-*.csv
 *.tsv
 *.xlsx
 *.xls
 *.db
 *.sqlite
 *.sqlite3
-data/
 datasets/
 raw_data/
 processed_data/
