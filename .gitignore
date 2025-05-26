@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -19,18 +20,15 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
-.env
-.env*
-!.env.example
-.venv
-env/
+
+# Virtual Environments
 venv/
 ENV/
+env/
+.env
+.venv
 env.bak/
 venv.bak/
-.python-version
-poetry.lock
 
 # Jupyter Notebooks
 .ipynb_checkpoints
@@ -38,168 +36,85 @@ poetry.lock
 profile_default/
 ipython_config.py
 
-# Data Science & ML
-*.h5
-*.pkl
-*.model
-*.joblib
-*.pickle
-*.npy
-*.npz
+# AWS
+.aws/
+.aws-credentials
+aws_config
+credentials.csv
+rootkey.csv
+*.pem
+
+# Data files
 *.tsv
 *.xlsx
-*.xls
 *.db
-*.sqlite
 *.sqlite3
-datasets/
-raw_data/
-processed_data/
-interim_data/
-models/
-checkpoints/
+*.h5
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.npz
+*.npy
+/data/
+!/data/.gitkeep
+
+# Model files
+*.pt
+*.pth
+*.onnx
+*.h5
+*.tflite
+*.pb
+/models/
+!/models/.gitkeep
+
+# Logs
 logs/
-tensorboard/
-mlruns/
-wandb/
-.Rhistory
-.RData
-.Rproj.user/
-
-# AI Frameworks
-.keras/
-.pytorch/
-.tensorflow/
-.torch/
-.onnx/
-.weights/
-.pt
-.pth
-.ckpt
-.pb
-saved_model/
-pretrained/
-
-# Docker
-.docker/
-docker-compose.override.yml
-docker-compose.*.yml
-.dockerignore
-docker/data/
-docker/logs/
-docker-volumes/
-
-# Kubernetes
-.kube/
-kubeconfig
-*.yaml.bak
-*.yml.bak
-k8s/secrets/
-helm/charts/*/charts/
-helm/*/charts/
-helm/*/requirements.lock
-
-# Terraform & Infrastructure as Code
-.terraform/
-.terraform.lock.hcl
-terraform.tfstate
-terraform.tfstate.backup
-terraform.tfvars
-*.tfvars.json
-*.tfplan
-.terragrunt-cache/
-
-# Serverless
-.serverless/
-serverless.env.yml
-node_modules/
-package-lock.json
-
-# Azure & Cloud
-.azure/
-.azureml/
-.config/
-.amlignore
-config.json
-azureml-logs/
-azureml_run/
-outputs/
-.deployment/
-.github/
-.vscode/
-.idea/
-*.publishsettings
-PublishScripts/
-*.pubxml
-*.azurePubxml
-.aws/
-.gcloud/
-.cloudformation/
-cdk.out/
-.pulumi/
-
-# CI/CD
-.github/workflows/*.yml.bak
-.gitlab-ci.yml.bak
-.circleci/config.yml.bak
-.travis.yml.bak
-.jenkins/
-.buildkite/
-.drone.yml.bak
-
-# App Deployment
-.vercel/
-.netlify/
-.surge/
-.firebase/
-.heroku/
-.elasticbeanstalk/
-.platform/
-.ebextensions/
-.amplify/
-dist/
-build/
-out/
-public/
-.next/
-.nuxt/
-.output/
-
-# Logs & Monitoring
 *.log
-logs/
-log/
-monitoring/
-grafana/
-prometheus/
-*.trace
-trace/
-traces/
+lightning_logs/
+runs/
+wandb/
+mlruns/
 
-# OS specific
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Secrets & Credentials
-*.pem
-*.key
-*.crt
-*.env
-.env.*
+# Environment Variables
+.env*
 !.env.example
-credentials/
-secrets/
-*_key.json
-*_credentials.json
-*_config.json
-*_secrets.*
-.secrets
-.credentials
-.config
-.auth
-auth_token.txtn
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+secrets.toml
+*.ini
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Tableau files
+*.twb
+*.twbx
+*.hyper
+*.tde
+*.tdsx
+*.tds
+
+# SQL
+*.sql
+!schema.sql
+!seeds/*.sql
+!macros/**/*.sql
+!models/**/*.sql
+!analyses/**/*.sql
+!tests/**/*.sql
+
+# SageMaker
+.sagemaker/
+*.tar.gz
+*.tar
